@@ -2,3 +2,4 @@
 venv/
 *.pickle
 data/
+*.orig
