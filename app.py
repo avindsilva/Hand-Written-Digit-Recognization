@@ -7,7 +7,7 @@ import numpy as np
 from infer.infer import create_vec, deskew, scale, load_model, classify_image
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = '../digit-recognization/data/upload/'
+app.config['UPLOAD_FOLDER'] = 'data/upload/'
 
 
 @app.route('/')

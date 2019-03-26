@@ -70,7 +70,7 @@ def classify_image(pixel_array, clf):
 
 if __name__ == '__main__':
     try:
-        data_path = '/home/venky/PycharmProjects/digit-recognization/data/upload/images.jpeg'
+        data_path = 'data/upload/images.jpeg'
     except:
         print('Error: Please enter system path')
     df = create_vec(data_path)
@@ -79,6 +79,6 @@ if __name__ == '__main__':
     # Scaling the data
     images = scale(df)
     # fillting model
-    clf = load_model("../data/model.pickle")
+    clf = load_model("data/model.pickle")
     label = classify_image(images, clf)
     print(" The image is of {} ".format(label))
